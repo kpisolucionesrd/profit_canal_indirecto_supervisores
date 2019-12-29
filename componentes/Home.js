@@ -4,7 +4,8 @@ import {Icon} from 'react-native-elements';
 import Logo from '../imagenes/logo_profit.png';
 
 //const URL="http://167.71.9.11:5000/api/";
-const URL="http://172.0.0.1:80/api/";
+const URL="http://165.22.205.126:5000/api/";
+//const URL="http://172.0.0.1:80/api/";
 
 export default class Home extends Component{
   constructor(props){
@@ -61,7 +62,6 @@ export default class Home extends Component{
         alert("El Dispositivo fue reiniciado completamente");
     }else
     {
-      alert("Aqui")
       //Proceso para hacer login con el servidor
       response=await fetch(URL+"profit_usuarios_supervisores/"+this.state.usuarioDigitado);
       responseJSON=await response.json();
